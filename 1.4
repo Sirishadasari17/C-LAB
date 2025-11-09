@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int a,b;
+	char n;
+	printf("enter two values:");
+	scanf("%d%d",&a,&b);
+	fflush(stdin);
+	printf("enter arthenetic operator:");
+	scanf("%c",&n);
+	switch(n)
+	{
+		case'+':printf("add is %d\n",a+b);break;
+		case'-':printf("sub is %d\n",a-b);break;
+		case'*':printf("mul is %d\n",a*b);break;
+		case'/':printf("div is %d\n",a/b);break;
+		case'%':printf("mod is %d\n",a%b);break;
+		default:
+		     printf("invalid operator\n");
+	}
+	printf("Thank you");
+	return 0;
+}
